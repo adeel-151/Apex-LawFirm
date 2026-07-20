@@ -900,11 +900,25 @@ img {
 }
 
 .footer-social a {
-    background-color: rgba(255,255,255,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255,255,255,0.05);
     color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.1);
 }
 .footer-social a:hover {
     background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(201,168,76,0.3);
+    color: #fff;
 }
 
 .footer-links h3, .footer-contact h3 {
