@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Legal Partners - Justice Delivered. Trust Earned. Decades of experience protecting your rights.">
+    <meta name="keywords" content="Law Firm, Lawyers, Legal Services, Corporate Law, Criminal Defense">
+    <meta name="author" content="Apex Legal Partners">
+    <title>Apex Legal Partners | High-End Law Firm</title>
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Loading Animation -->
+    <div id="loader" class="loader-container">
+        <i class="fa-solid fa-scale-balanced loader-icon"></i>
+    </div>
+
+    <!-- 2. Sticky Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-scale-unbalanced"></i> APEX LEGAL
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- 3. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content cinematic-entrance">
+            <h1>Justice Delivered. Trust Earned.</h1>
+            <p>Decades of experience protecting your rights and securing your future.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Free Consultation</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-grid">
+            <div class="about-text fade-up">
+                <h2 class="section-title">Who We Are</h2>
+                <p>For over 20 years, Apex Legal Partners has stood as a beacon of legal excellence and unwavering client dedication. Our firm is built on a foundation of integrity, relentless advocacy, and profound legal expertise.</p>
+                <p>We take a client-first approach, ensuring that every case receives the personalized attention and strategic depth it deserves. With a 98% success rate in settlements and trials, we don't just practice law—we deliver justice.</p>
+                <a href="#team" class="btn btn-primary mt-2">Meet Our Team</a>
+            </div>
+            <div class="about-image fade-up">
+                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=800" alt="Law Books">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Services Section -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Practice Areas</h2>
+                <p class="text-center">Comprehensive legal solutions tailored to your unique needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-up">
+                    <i class="fa-solid fa-building service-icon"></i>
+                    <h3>Corporate Law</h3>
+                    <p>Expert guidance on mergers, acquisitions, compliance, and corporate governance for businesses of all sizes.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-gavel service-icon"></i>
+                    <h3>Criminal Defense</h3>
+                    <p>Aggressive representation defending your rights and securing your freedom against criminal charges.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-users service-icon"></i>
+                    <h3>Family & Divorce</h3>
+                    <p>Compassionate yet firm legal support through complex divorce, custody, and family law matters.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.3s;">
+                    <i class="fa-solid fa-house-chimney service-icon"></i>
+                    <h3>Real Estate Law</h3>
+                    <p>Navigating commercial and residential property transactions, zoning, and leasing agreements.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.4s;">
+                    <i class="fa-solid fa-lightbulb service-icon"></i>
+                    <h3>Intellectual Property</h3>
+                    <p>Protecting your innovations, trademarks, and creative works from infringement and unauthorized use.</p>
+                </div>
+                <div class="service-card fade-up" style="transition-delay: 0.5s;">
+                    <i class="fa-solid fa-briefcase service-icon"></i>
+                    <h3>Employment Disputes</h3>
+                    <p>Resolving workplace conflicts, discrimination claims, and negotiating favorable severance packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Features/Why Choose Us -->
+    <section class="features section-padding text-light">
+        <div class="container features-grid">
+            <div class="feature-item fade-up">
+                <i class="fa-solid fa-chart-line feature-icon"></i>
+                <h3>98%</h3>
+                <p>Success Rate</p>
+            </div>
+            <div class="feature-item fade-up" style="transition-delay: 0.1s;">
+                <i class="fa-solid fa-trophy feature-icon"></i>
+                <h3>500+</h3>
+                <p>Cases Won</p>
+            </div>
+            <div class="feature-item fade-up" style="transition-delay: 0.2s;">
+                <i class="fa-solid fa-headset feature-icon"></i>
+                <h3>24/7</h3>
+                <p>Client Support</p>
+            </div>
+            <div class="feature-item fade-up" style="transition-delay: 0.3s;">
+                <i class="fa-solid fa-lock feature-icon"></i>
+                <h3>100%</h3>
+                <p>Confidentiality</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Team Section -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Meet Our Experts</h2>
+                <p class="text-center">A formidable team of legal minds dedicated to your success.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card fade-up">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Arthur Pendelton">
+                    <div class="team-info">
+                        <h3>Arthur Pendelton</h3>
+                        <span class="designation">Senior Partner</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Jenkins">
+                    <div class="team-info">
+                        <h3>Sarah Jenkins</h3>
+                        <span class="designation">Managing Partner</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Marcus Vance">
+                    <div class="team-info">
+                        <h3>Marcus Vance</h3>
+                        <span class="designation">Lead Litigator</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Portfolio/Gallery -->
+    <section id="gallery" class="gallery section-padding bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Inside Apex Legal</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-up">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="Office Lobby">
+                </div>
+                <div class="gallery-item fade-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800" alt="Meeting Room">
+                </div>
+                <div class="gallery-item fade-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=800" alt="Court Preparation">
+                </div>
+                <div class="gallery-item fade-up" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=800" alt="Client Consultation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Pricing Plans -->
+    <section id="pricing" class="pricing section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Transparent Pricing</h2>
+                <p class="text-center">Clear, upfront costs with no hidden fees.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-up">
+                    <h3>Basic Consultation</h3>
+                    <div class="price">
+                        <span class="currency">$</span>99<span class="period">/session</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 1 Hour Case Evaluation</li>
+                        <li><i class="fa-solid fa-check"></i> Preliminary Legal Advice</li>
+                        <li><i class="fa-solid fa-check"></i> Document Review (Up to 10 pages)</li>
+                        <li class="disabled"><i class="fa-solid fa-xmark"></i> Court Representation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card popular fade-up" style="transition-delay: 0.1s;">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard Retainer</h3>
+                    <div class="price">
+                        <span class="currency">$</span>499<span class="period">/mo</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Priority Case Handling</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Phone Consultations</li>
+                        <li><i class="fa-solid fa-check"></i> Draft Letters & Agreements</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Court Representation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Choose Standard</a>
+                </div>
+                <div class="pricing-card fade-up" style="transition-delay: 0.2s;">
+                    <h3>Premium Defense</h3>
+                    <div class="price">
+                        <span class="currency">$</span>999<span class="period">/mo</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> 24/7 Dedicated Legal Team</li>
+                        <li><i class="fa-solid fa-check"></i> Comprehensive Litigation</li>
+                        <li><i class="fa-solid fa-check"></i> Expert Witness Sourcing</li>
+                        <li><i class="fa-solid fa-check"></i> Full Court Representation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Testimonials -->
+    <section class="testimonials section-padding bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Client Voices</h2>
+            </div>
+            <div class="testimonial-slider fade-up">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">"Apex Legal Partners completely turned my corporate dispute around. Their strategic insight and aggressive defense saved my company millions."</p>
+                        <h4>- James H., New York</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review">"I was facing severe charges, but Marcus Vance fought tirelessly for my freedom. Truly the best defense team you could ask for."</p>
+                        <h4>- Robert T., Chicago</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="review">"Compassionate, thorough, and highly professional. They made a very messy divorce as seamless and pain-free as possible."</p>
+                        <h4>- Elena M., Los Angeles</h4>
+                    </div>
+                </div>
+                <div class="slider-dots" id="slider-dots">
+                    <!-- Dots generated via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FAQ Section -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container fade-up">
+                <div class="faq-item">
+                    <button class="faq-question">How much do legal fees cost? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Our fees vary depending on the complexity of the case. We offer transparent pricing structures, including flat fees for specific services, hourly rates, and contingency fees for certain civil cases.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long does a case usually take? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Timelines depend entirely on the nature of the case, court schedules, and willingness of parties to settle. A simple contract review may take days, while complex litigation can span months or years.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer free initial consultations? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a complimentary brief phone consultation to assess whether we are the right fit for your legal needs before committing to a paid session.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Will my case go to trial? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>The majority of civil and criminal cases are settled out of court. However, our litigators are always prepared to take a case to trial if a fair settlement cannot be reached.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Contact Form & 13. Map Section -->
+    <section id="contact" class="contact section-padding bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <p class="text-center">Schedule your consultation today.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-container fade-up">
+                    <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="case-type" required>
+                                <option value="" disabled selected>Select Case Type</option>
+                                <option value="corporate">Corporate Law</option>
+                                <option value="criminal">Criminal Defense</option>
+                                <option value="family">Family & Divorce</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Briefly describe your situation..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-map fade-up" style="transition-delay: 0.2s;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12089.87320015509!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5eb6!2sManhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. Newsletter Section -->
+    <section class="newsletter section-padding text-light">
+        <div class="container fade-up">
+            <div class="newsletter-content text-center">
+                <h2>Stay Updated on Legal Trends</h2>
+                <p>Subscribe to our newsletter for insights, case studies, and firm news.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-scale-unbalanced"></i> APEX LEGAL
+                </a>
+                <p>Delivering unyielding justice and earning trust through decades of exceptional legal representation.</p>
+                <div class="social-links footer-social">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Practice Areas</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 120 Broadway, Suite 400, New York, NY 10271</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@apexlegal.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Apex Legal Partners. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
