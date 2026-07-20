@@ -231,17 +231,24 @@ img {
     top: 0;
     width: 100%;
     height: var(--nav-height);
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.05); /* Transparent Glass Default */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     transition: all var(--transition-fast);
 }
 
-.dark-mode .navbar {
-    background: rgba(18, 18, 18, 0.9);
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.dark-mode .navbar.scrolled {
+    background: rgba(18, 18, 18, 0.95);
     border-bottom: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 .nav-container {
@@ -258,12 +265,17 @@ img {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #fff; /* White on transparent hero */
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: color var(--transition-fast);
 }
-.dark-mode .logo {
+
+.navbar.scrolled .logo {
+    color: var(--color-primary);
+}
+.dark-mode .navbar.scrolled .logo {
     color: var(--color-text-main);
 }
 .logo i {
@@ -276,9 +288,21 @@ img {
 }
 
 .nav-links a {
-    font-weight: 500;
-    font-size: 0.95rem;
+    font-weight: 600;
+    font-size: 0.9rem;
     position: relative;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff; /* White by default */
+    transition: color var(--transition-fast);
+}
+
+.navbar.scrolled .nav-links a {
+    color: var(--color-text-main);
+}
+.dark-mode .navbar.scrolled .nav-links a {
+    color: var(--color-text-light);
 }
 
 .nav-links a::after {
@@ -293,7 +317,7 @@ img {
 }
 
 .nav-links a:hover {
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
 }
 
 .nav-links a:hover::after {
@@ -311,9 +335,16 @@ img {
     background: none;
     border: none;
     font-size: 1.2rem;
-    color: var(--color-text-main);
+    color: #fff;
     cursor: pointer;
     transition: color var(--transition-fast);
+}
+
+.navbar.scrolled #theme-toggle, .navbar.scrolled .mobile-menu-btn {
+    color: var(--color-text-main);
+}
+.dark-mode .navbar.scrolled #theme-toggle, .dark-mode .navbar.scrolled .mobile-menu-btn {
+    color: var(--color-text-light);
 }
 
 #theme-toggle:hover {

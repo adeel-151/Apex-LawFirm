@@ -152,14 +152,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Back to Top Button
+    // 7. Scroll effects (Back to Top & Sticky Navbar)
     const backToTopBtn = document.getElementById('back-to-top');
+    const navbar = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
+        // Back to top visibility
         if (window.scrollY > 300) {
             backToTopBtn.classList.add('visible');
         } else {
             backToTopBtn.classList.remove('visible');
+        }
+        
+        // Sticky Glassmorphism Navbar
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
     });
 
